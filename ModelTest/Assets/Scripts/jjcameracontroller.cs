@@ -7,7 +7,7 @@ public class jjcameracontroller : MonoBehaviour
     public Camera camera;
     public float focalLength = 50.0f;
     private float lerp = 0f;
-    private float duration = 5f;
+    private float duration = 0.2f;
     private float mid = 50f;
     private float zoom = 100f;
     public Transform target;
@@ -24,7 +24,10 @@ public class jjcameracontroller : MonoBehaviour
 
 
         transform.LookAt(target);
+    }
 
+    void OnTriggerExit(Collider other)
+    {
         lerp += Time.deltaTime / duration;
         focalLength = Mathf.Lerp(mid, zoom, lerp);
         camera.focalLength = focalLength;

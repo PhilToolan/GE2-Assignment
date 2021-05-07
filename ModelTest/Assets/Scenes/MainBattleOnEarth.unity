@@ -184,8 +184,9 @@ GameObject:
   - component: {fileID: 51929487}
   - component: {fileID: 51929490}
   - component: {fileID: 51929491}
+  - component: {fileID: 51929492}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: JJ Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -331,6 +332,19 @@ MonoBehaviour:
   camera: {fileID: 51929488}
   focalLength: 50
   target: {fileID: 1130273206}
+--- !u!65 &51929492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51929486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.946452, y: 12.050781, z: 13.286443}
+  m_Center: {x: 0.8440175, y: -1.2263832, z: 6.1432214}
 --- !u!1001 &87350630
 PrefabInstance:
   m_ObjectHideFlags: 0
