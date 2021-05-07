@@ -7,15 +7,23 @@ public class jjcameracontroller : MonoBehaviour
     public Camera camera;
     public float focalLength = 50.0f;
     private float lerp = 0f;
-    private float duration = 0.2f;
+    private float duration = 0.3f;
     private float mid = 50f;
     private float zoom = 100f;
     public Transform target;
+    public bool zoomin = false;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("space"))
+        {
+            lerp += Time.deltaTime / duration;
+            focalLength = Mathf.Lerp(mid, zoom, lerp);
+            camera.focalLength = focalLength;
+        }
+
+        if (zoomin)
         {
             lerp += Time.deltaTime / duration;
             focalLength = Mathf.Lerp(mid, zoom, lerp);
@@ -28,8 +36,10 @@ public class jjcameracontroller : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        lerp += Time.deltaTime / duration;
-        focalLength = Mathf.Lerp(mid, zoom, lerp);
-        camera.focalLength = focalLength;
+        if (other.tag == "Prey")
+        {
+            zoomin = true;
+        }
+
     }
 }
