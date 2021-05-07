@@ -70,7 +70,7 @@ public class InfiniteTerrain : MonoBehaviour
                     {
                         // The position of the new tile
                         Vector3 pos = new Vector3((x * quadsPerTile + playerX),
-                            0,
+                            -185,
                             (z * quadsPerTile + playerZ));
 
                         string tilename = "Tile_" + ((int)(pos.x)).ToString() + "_" + ((int)(pos.z)).ToString();
