@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 51929488}
   - component: {fileID: 51929487}
   - component: {fileID: 51929490}
+  - component: {fileID: 51929491}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -249,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51929486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: -12.56, y: 1, z: -1.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -315,6 +316,21 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &51929491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51929486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b4c9bf9911ce34598934c7b06c5aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 51929488}
+  focalLength: 50
+  target: {fileID: 1130273206}
 --- !u!1001 &87350630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,8 +822,8 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 0.1
-  banking: 0.1
+  damping: 0.8
+  banking: 0.3
   maxSpeed: 5
   maxForce: 10
   player: {fileID: 0}
