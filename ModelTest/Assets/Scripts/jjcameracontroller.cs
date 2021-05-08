@@ -12,15 +12,15 @@ public class jjcameracontroller : MonoBehaviour
     private float zoom = 100f;
     public Transform target;
     public bool zoomin = false;
+    public bool zoomout = false;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("space"))
         {
-            lerp += Time.deltaTime / duration;
-            focalLength = Mathf.Lerp(mid, zoom, lerp);
-            camera.focalLength = focalLength;
+            zoomin = false;
+            zoomout = true;
         }
 
         if (zoomin)
@@ -28,8 +28,13 @@ public class jjcameracontroller : MonoBehaviour
             lerp += Time.deltaTime / duration;
             focalLength = Mathf.Lerp(mid, zoom, lerp);
             camera.focalLength = focalLength;
-        }
 
+        } else if (zoomout)
+        {
+            lerp += Time.deltaTime / duration;
+            focalLength = Mathf.Lerp(zoom, mid, lerp);
+            camera.focalLength = focalLength;
+        }
 
         transform.LookAt(target);
     }
