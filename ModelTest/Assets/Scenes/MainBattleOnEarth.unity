@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980d4d0c9eb0c1649b58352e2fc8e488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera1: {fileID: 2145754505}
+  camera1: {fileID: 1247416438}
   camera2: {fileID: 1451352115}
 --- !u!54 &244321697
 Rigidbody:
@@ -1931,7 +1931,7 @@ Transform:
   m_GameObject: {fileID: 244321695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -38}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
@@ -12445,7 +12445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1451352116
 Transform:
   m_ObjectHideFlags: 0
