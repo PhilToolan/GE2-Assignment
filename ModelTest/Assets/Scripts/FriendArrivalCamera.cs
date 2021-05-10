@@ -7,7 +7,7 @@ public class FriendArrivalCamera : MonoBehaviour
     public Transform target;
     public float speed = 10;
 
-    private float rotSpeed = 90.0f;
+    private float rotSpeed = 15.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class FriendArrivalCamera : MonoBehaviour
                 , rotSpeed * Time.deltaTime
                 );
 
-        transform.Translate(0, 0, speed * Time.deltaTime);
+        //transform.Translate(0, 0, speed * Time.deltaTime);
 
 
 
