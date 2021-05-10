@@ -63,7 +63,6 @@ public class ChangeCamera : MonoBehaviour
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
-            battle.SetActive(true);
         }
 
     }
