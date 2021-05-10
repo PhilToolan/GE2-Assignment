@@ -13,6 +13,13 @@ public class jjcameracontroller : MonoBehaviour
     public Transform target;
     public bool zoomin = false;
     public bool zoomout = false;
+    private bool count = false;
+
+    private float waitTime = 3.0f;
+    private float timer = 0.0f;
+
+    public GameObject camera1;
+    public GameObject camera2;
 
     // Update is called once per frame
     void Update()
@@ -36,6 +43,16 @@ public class jjcameracontroller : MonoBehaviour
             camera.focalLength = focalLength;
         }
 
+        if (count)
+        {
+            timer += Time.deltaTime;
+
+            if (timer > waitTime)
+            {
+                SwitchCamera();
+            }
+        }
+
         transform.LookAt(target);
     }
 
@@ -44,7 +61,14 @@ public class jjcameracontroller : MonoBehaviour
         if (other.tag == "Prey")
         {
             zoomin = true;
+            count = true;
         }
 
+    }
+
+    public void SwitchCamera()
+    {
+        camera2.SetActive(true);
+        camera1.SetActive(false);
     }
 }
