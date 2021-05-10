@@ -3,7 +3,10 @@ The Battle I will be recreating is the Battle of Antarctica from Stargate SG-1. 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/XKvLHLqPUQc/0.jpg)](https://youtu.be/XKvLHLqPUQc)
 
 
-Any scenes that take place in cockpits will be replaced with the camera following a random ship in the scene.
-The rest of the scene will follow the scene as close to the original as possible. Most of the ships in the scene will be using pursue and evade behaviours, the final part of the 
-battle will be a little bit more scripted to ensure it stays faithful to the original. When the battle moves to space, it will transition to a new scene which takes place in 
-space.
+Any scenes that take place in cockpits are replaced with the camera following a particular ship in the scene.
+The rest of the scene follows the scene as close to the original as possible. Most of the ships in the scene are using pursue and evade behaviours. When the battle moves to space, 
+it transitions to a new scene which takes place in space. 
+
+All weapons are made using unitys partile system and trail renderer. Bloom post processing is used to add to the visual style. Various different camera controls are used 
+throughout to keep the action fresh and follow closely to the original.
+
