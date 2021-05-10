@@ -16,6 +16,15 @@ public class NextScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SceneManager.LoadScene(space);
+        
     }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "303")
+        {
+            SceneManager.LoadScene(space);
+        }
+    }
+ 
 }

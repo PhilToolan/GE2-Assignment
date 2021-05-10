@@ -7,6 +7,9 @@ public class ChangeCamera : MonoBehaviour
     public GameObject camera1;
     public GameObject camera2;
     public GameObject battle;
+    public GameObject final;
+    public GameObject exp;
+    public GameObject weap;
 
 
     // Start is called before the first frame update
@@ -67,6 +70,17 @@ public class ChangeCamera : MonoBehaviour
         if (col.gameObject.tag == "SuperWeapon")
         {
             camera1.SetActive(false);
+            camera2.SetActive(true);
+        }
+        if (col.gameObject.tag == "Final")
+        {
+            camera1.SetActive(false);
+            battle.SetActive(false);
+            final.SetActive(false);
+            exp.SetActive(false);
+            weap.SetActive(false);
+
+
             camera2.SetActive(true);
         }
 

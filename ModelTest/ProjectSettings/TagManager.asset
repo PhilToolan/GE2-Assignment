@@ -18,6 +18,7 @@ TagManager:
   - 303
   - Attack
   - SuperWeapon
+  - Final
   layers:
   - Default
   - TransparentFX

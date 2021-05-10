@@ -305,6 +305,9 @@ MonoBehaviour:
   camera1: {fileID: 1535640039}
   camera2: {fileID: 1431851690}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &32830426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -896,6 +899,9 @@ MonoBehaviour:
   camera1: {fileID: 1408873288}
   camera2: {fileID: 233345450}
   battle: {fileID: 1017933317}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &72036088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2179,6 +2185,9 @@ MonoBehaviour:
   camera1: {fileID: 203898089}
   camera2: {fileID: 804321159}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!65 &208399437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2728,6 +2737,9 @@ MonoBehaviour:
   camera1: {fileID: 1247416438}
   camera2: {fileID: 1451352115}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &244321697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7334,6 +7346,9 @@ MonoBehaviour:
   camera1: {fileID: 1431851690}
   camera2: {fileID: 51929486}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &764564092
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7671,6 +7686,9 @@ MonoBehaviour:
   camera1: {fileID: 804321159}
   camera2: {fileID: 2145754505}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!65 &792297965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8143,7 +8161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &805251293
 Transform:
   m_ObjectHideFlags: 0
@@ -18227,6 +18245,9 @@ MonoBehaviour:
   camera1: {fileID: 2032126903}
   camera2: {fileID: 1408873288}
   battle: {fileID: 1017933317}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &1249295703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18488,6 +18509,9 @@ MonoBehaviour:
   camera1: {fileID: 1451352115}
   camera2: {fileID: 1535640039}
   battle: {fileID: 805251292}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &1277376494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24509,6 +24533,7 @@ GameObject:
   - component: {fileID: 1798134027}
   - component: {fileID: 1798134026}
   - component: {fileID: 1798134025}
+  - component: {fileID: 1798134029}
   m_Layer: 0
   m_Name: Switch Earth to Space
   m_TagString: Untagged
@@ -24586,12 +24611,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798134024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 290, y: 80.51, z: 40.56}
+  m_LocalPosition: {x: 147.8, y: 22.27, z: 53.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1798134029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798134024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c716693e7de241d4f89992826c278fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  space: Space
 --- !u!1 &1804812652
 GameObject:
   m_ObjectHideFlags: 0
@@ -26038,6 +26076,9 @@ MonoBehaviour:
   camera1: {fileID: 1156395576}
   camera2: {fileID: 203898089}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &1901392486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26500,6 +26541,9 @@ MonoBehaviour:
   camera1: {fileID: 233345450}
   camera2: {fileID: 2082709346}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &1916448835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26721,6 +26765,9 @@ MonoBehaviour:
   camera1: {fileID: 2145754505}
   camera2: {fileID: 1247416438}
   battle: {fileID: 0}
+  final: {fileID: 0}
+  exp: {fileID: 0}
+  weap: {fileID: 0}
 --- !u!54 &1929713285
 Rigidbody:
   m_ObjectHideFlags: 0
