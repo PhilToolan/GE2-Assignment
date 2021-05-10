@@ -2,6 +2,8 @@
 The Battle I will be recreating is the Battle of Antarctica from Stargate SG-1. Here is the scene:
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/XKvLHLqPUQc/0.jpg)](https://youtu.be/XKvLHLqPUQc)
 
+Here is my Version: https://youtu.be/W9XPjO8YJ88
+
 
 Any scenes that take place in cockpits are replaced with the camera following a particular ship in the scene.
 The rest of the scene follows the scene as close to the original as possible. Most of the ships in the scene are using pursue and evade behaviours. When the battle moves to space, 
