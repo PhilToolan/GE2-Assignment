@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Prey
   - MainCharacters
+  - ArrivalCamera
   layers:
   - Default
   - TransparentFX
