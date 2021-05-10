@@ -17597,7 +17597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 2032126903}
   camera2: {fileID: 233345450}
-  battle: {fileID: 0}
+  battle: {fileID: 1017933317}
 --- !u!54 &1249295703
 Rigidbody:
   m_ObjectHideFlags: 0
