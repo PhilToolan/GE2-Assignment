@@ -15,6 +15,7 @@ TagManager:
   - EnemyFleet
   - GoodFleet
   - ClashCamera
+  - 303
   layers:
   - Default
   - TransparentFX

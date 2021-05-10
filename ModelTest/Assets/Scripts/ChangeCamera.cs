@@ -54,6 +54,11 @@ public class ChangeCamera : MonoBehaviour
             camera2.SetActive(true);
             battle.SetActive(true);
         }
+        if (col.gameObject.tag == "303")
+        {
+            camera1.SetActive(false);
+            camera2.SetActive(true);
+        }
 
     }
 }
