@@ -10,6 +10,8 @@ TagManager:
   - Prey
   - MainCharacters
   - ArrivalCamera
+  - DialogueCamera
+  - FriendArrival
   layers:
   - Default
   - TransparentFX

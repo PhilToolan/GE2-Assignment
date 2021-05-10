@@ -32,5 +32,10 @@ public class ChangeCamera : MonoBehaviour
             camera1.SetActive(false);
             camera2.SetActive(true);
         }
+        if (col.gameObject.tag == "DialogueCamera")
+        {
+            camera1.SetActive(false);
+            camera2.SetActive(true);
+        }
     }
 }
