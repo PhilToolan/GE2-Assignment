@@ -12,5 +12,10 @@ public class DisableBoid : MonoBehaviour
         {
             main.GetComponent<Boid>().enabled = false;
         }
+        if (col.gameObject.tag == "SuperWeapon")
+        {
+            main.GetComponent<Boid>().enabled = true;
+        }
+
     }
 }

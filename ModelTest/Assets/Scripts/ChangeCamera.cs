@@ -64,6 +64,11 @@ public class ChangeCamera : MonoBehaviour
             camera1.SetActive(false);
             camera2.SetActive(true);
         }
+        if (col.gameObject.tag == "SuperWeapon")
+        {
+            camera1.SetActive(false);
+            camera2.SetActive(true);
+        }
 
     }
 }
