@@ -12,6 +12,8 @@ TagManager:
   - ArrivalCamera
   - DialogueCamera
   - FriendArrival
+  - EnemyFleet
+  - GoodFleet
   layers:
   - Default
   - TransparentFX
