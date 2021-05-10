@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &3794217245734822350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986106257461836743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10495301, y: 0.048191737, z: 0.305317}
+  m_Center: {x: -0.047455296, y: -0.001959622, z: 0.13128737}
 --- !u!1 &3794217244796478447
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   ammo: 10
-  bullet: {fileID: 7101472392312194846, guid: f470beb47bd6ab646aca51f5d8113a63, type: 3}
+  bullet: {fileID: 8326592939757074024, guid: 6ed9d7e252ed3c34a96211751633325c, type: 3}
   enemy: {fileID: 0}
 --- !u!114 &3794217244796478445
 MonoBehaviour:
@@ -169,19 +182,6 @@ MonoBehaviour:
   boid: {fileID: 0}
   targetGameObject: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
---- !u!65 &3794217245734822350
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986106257461836743}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.10495301, y: 0.048191737, z: 0.305317}
-  m_Center: {x: -0.047455296, y: -0.001959622, z: 0.13128737}
 --- !u!1001 &3794217245734822347
 PrefabInstance:
   m_ObjectHideFlags: 0
