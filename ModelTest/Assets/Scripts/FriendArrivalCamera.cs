@@ -5,6 +5,7 @@ using UnityEngine;
 public class FriendArrivalCamera : MonoBehaviour
 {
     public Transform target;
+    public float speed = 10;
 
     private float rotSpeed = 90.0f;
     // Start is called before the first frame update
@@ -23,7 +24,9 @@ public class FriendArrivalCamera : MonoBehaviour
                 Quaternion.LookRotation(toPlayer)
                 , rotSpeed * Time.deltaTime
                 );
-        
+
+        transform.Translate(0, 0, speed * Time.deltaTime);
+
 
 
     }
