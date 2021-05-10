@@ -1800,6 +1800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 203898089}
   camera2: {fileID: 804321159}
+  battle: {fileID: 0}
 --- !u!65 &208399437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2204,6 +2205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 1247416438}
   camera2: {fileID: 1451352115}
+  battle: {fileID: 0}
 --- !u!54 &244321697
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3644,7 +3646,7 @@ Transform:
   - {fileID: 1506631022}
   - {fileID: 698367929}
   m_Father: {fileID: 805251293}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &355898105
 MonoBehaviour:
@@ -6497,6 +6499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 804321159}
   camera2: {fileID: 2145754505}
+  battle: {fileID: 0}
 --- !u!65 &792297965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6921,14 +6924,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1504854754}
-  - {fileID: 1431851691}
   - {fileID: 355898104}
   - {fileID: 2119383921}
   - {fileID: 2068798272}
   - {fileID: 1057583185}
   - {fileID: 1730614400}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &805452168
 GameObject:
@@ -15292,7 +15294,7 @@ Transform:
   - {fileID: 496866755}
   - {fileID: 1568675067}
   m_Father: {fileID: 805251293}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1062573580
 GameObject:
@@ -16627,7 +16629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera1: {fileID: 1451352115}
-  camera2: {fileID: 805251292}
+  camera2: {fileID: 1431851690}
+  battle: {fileID: 805251292}
 --- !u!54 &1277376494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19035,12 +19038,12 @@ GameObject:
   - component: {fileID: 1431851693}
   - component: {fileID: 1431851692}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Overview Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1431851691
 Transform:
   m_ObjectHideFlags: 0
@@ -19052,8 +19055,8 @@ Transform:
   m_LocalPosition: {x: 172, y: 110.7, z: 53.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 805251293}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 45, y: -45, z: 0}
 --- !u!81 &1431851692
 AudioListener:
@@ -21768,7 +21771,7 @@ Transform:
   - {fileID: 1560428024}
   - {fileID: 1974888969}
   m_Father: {fileID: 805251293}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1742835105
 GameObject:
@@ -23598,6 +23601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 1156395576}
   camera2: {fileID: 203898089}
+  battle: {fileID: 0}
 --- !u!54 &1901392486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24138,6 +24142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera1: {fileID: 2145754505}
   camera2: {fileID: 1247416438}
+  battle: {fileID: 0}
 --- !u!54 &1929713285
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25591,7 +25596,7 @@ Transform:
   - {fileID: 1908924215}
   - {fileID: 875156879}
   m_Father: {fileID: 805251293}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2072763366 stripped
 Transform:
@@ -25794,7 +25799,7 @@ Transform:
   - {fileID: 1328873421}
   - {fileID: 857915118}
   m_Father: {fileID: 805251293}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123164830
 GameObject:

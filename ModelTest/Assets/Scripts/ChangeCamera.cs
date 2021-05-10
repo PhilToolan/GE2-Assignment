@@ -6,6 +6,7 @@ public class ChangeCamera : MonoBehaviour
 {
     public GameObject camera1;
     public GameObject camera2;
+    public GameObject battle;
 
 
     // Start is called before the first frame update
@@ -51,6 +52,7 @@ public class ChangeCamera : MonoBehaviour
         {
             camera1.SetActive(false);
             camera2.SetActive(true);
+            battle.SetActive(true);
         }
 
     }
