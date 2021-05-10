@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class FireRockets : MonoBehaviour
 {
-    private float waitTime = 1.0f;
+    public float waitTime = 1.0f;
     private float timer = 0.0f;
-    private bool fireonce = true;
+    public bool fireonce = true;
+    public bool firemultiple = false;
+    private bool shooting = false;
+    public int fireRate = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +29,34 @@ public class FireRockets : MonoBehaviour
                 GameObject bullet = GameObject.Instantiate(GetComponent<Fighter>().bullet, transform.position + transform.forward * 2, transform.rotation);
                 fireonce = false;
             }
+            if (firemultiple)
+            {
+                shooting = true;
+            }
            
         }
         
     }
+
+    private void OnEnable()
+    {
+        StartCoroutine(Shoot());
+    }
+
+    IEnumerator Shoot()
+    {
+        while (true)
+        {
+            if (shooting)
+            {
+                GameObject bullet = GameObject.Instantiate(GetComponent<Fighter>().bullet
+                    , transform.position + transform.forward * 2
+                    , transform.rotation
+                    );
+
+            }
+            yield return new WaitForSeconds(1.0f / (float)fireRate);
+        }
+    }
 }
+

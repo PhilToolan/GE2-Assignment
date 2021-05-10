@@ -16,6 +16,7 @@ TagManager:
   - GoodFleet
   - ClashCamera
   - 303
+  - Attack
   layers:
   - Default
   - TransparentFX
