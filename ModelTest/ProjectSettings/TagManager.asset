@@ -8,6 +8,7 @@ TagManager:
   - Ammo
   - Bullet
   - Prey
+  - MainCharacters
   layers:
   - Default
   - TransparentFX
